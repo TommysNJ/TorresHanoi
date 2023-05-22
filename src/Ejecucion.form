@@ -24,7 +24,7 @@
           <text value="Ingrese número de bloques:"/>
         </properties>
       </component>
-      <component id="e6493" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
+      <component id="e6493" class="javax.swing.JTextArea" binding="areaTorre1">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
@@ -40,7 +40,7 @@
           <text value="Empezar Juego"/>
         </properties>
       </component>
-      <component id="b4b89" class="javax.swing.JTextArea" binding="textArea2" default-binding="true">
+      <component id="b4b89" class="javax.swing.JTextArea" binding="areaTorre2">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
@@ -48,7 +48,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="2e9d2" class="javax.swing.JTextArea" binding="textArea3" default-binding="true">
+      <component id="2e9d2" class="javax.swing.JTextArea" binding="areaTorre3">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
@@ -56,52 +56,52 @@
         </constraints>
         <properties/>
       </component>
-      <component id="8e492" class="javax.swing.JButton" binding="mover21">
+      <component id="8e492" class="javax.swing.JButton" binding="mover21Button">
         <constraints>
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 1"/>
         </properties>
       </component>
-      <component id="f9f7d" class="javax.swing.JButton" binding="mover31">
+      <component id="f9f7d" class="javax.swing.JButton" binding="mover31Button">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 1"/>
         </properties>
       </component>
-      <component id="5232b" class="javax.swing.JButton" binding="mover12">
+      <component id="5232b" class="javax.swing.JButton" binding="mover12Button">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 2"/>
         </properties>
       </component>
-      <component id="68b18" class="javax.swing.JButton" binding="mover13">
+      <component id="68b18" class="javax.swing.JButton" binding="mover13Button">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 3"/>
         </properties>
       </component>
-      <component id="5fd85" class="javax.swing.JButton" binding="mover23">
+      <component id="5fd85" class="javax.swing.JButton" binding="mover23Button">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 3"/>
         </properties>
       </component>
-      <component id="766b4" class="javax.swing.JButton" binding="mover32">
+      <component id="766b4" class="javax.swing.JButton" binding="mover32Button">
         <constraints>
           <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Button"/>
+          <text value="Mover a 2"/>
         </properties>
       </component>
       <component id="fda67" class="javax.swing.JButton" binding="button7" default-binding="true">

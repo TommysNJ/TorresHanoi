@@ -4,9 +4,9 @@ public class Juego {
     private Torre torre3;
 
     public Juego (int numBloques){
-        torre1 = new Torre("A");
-        torre2 = new Torre("B");
-        torre3 = new Torre("C");
+        torre1 = new Torre("1");
+        torre2 = new Torre("2");
+        torre3 = new Torre("3");
 
         for (int i = numBloques; i>=1; i-- ){
             torre1.pushBloque(new Bloque(i));
@@ -14,11 +14,11 @@ public class Juego {
     }
     public Torre getTorre(String nombreTorre) {
         switch (nombreTorre) {
-            case "A":
+            case "1":
                 return torre1;
-            case "B":
+            case "2":
                 return torre2;
-            case "C":
+            case "3":
                 return torre3;
             default:
                 throw new IllegalArgumentException("Nombre de torre inválido: " + nombreTorre);
@@ -29,15 +29,15 @@ public class Juego {
         Torre torreDestino = getTorre(destino);
 
         if (torreActual.isEmpty()) {
-            throw new IllegalStateException("La torre de origen está vacía.");
+            throw new IllegalArgumentException("La torre de origen está vacía.");
         }
 
-        if (!torreDestino.isEmpty() && torreActual.getTopBloque().getTamanio() > torreDestino.getTopBloque().getTamanio()) {
-            throw new IllegalStateException("No se puede mover un bloque sobre uno más pequeño.");
+        Bloque bloque = torreActual.getTopBloque();
+        if (torreDestino.isEmpty() || bloque.getTamanio() < torreDestino.getTopBloque().getTamanio()) {
+            torreDestino.pushBloque(torreActual.popBloque());
+        } else {
+            throw new IllegalArgumentException("No se puede mover un bloque a una torre con un bloque más pequeño encima.");
         }
-
-        Bloque bloque = torreActual.popBloque();
-        torreDestino.pushBloque(bloque);
     }
     public boolean finJuego() {
         return torre1.isEmpty() && torre2.isEmpty() || torre1.isEmpty() && torre3.isEmpty();
